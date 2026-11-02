@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Addressing Modes Explorer</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Addressing Modes Explorer</h1>
+        <p class="subtitle">Computer Architecture Project - G17</p>
+
+        <h2>Memory Table</h2>
+        <div id="memoryTable" class="memory-table"></div>
+
+        <h2>Select Addressing Mode</h2>
+
+        <div class="buttons">
+            <button type="button" data-mode="immediate">Immediate</button>
+            <button type="button" data-mode="direct">Direct</button>
+            <button type="button" data-mode="indirect">Indirect</button>
+            <button type="button" data-mode="register">Register</button>
+        </div>
+
+        <h2>Enter Value</h2>
+
+        <input
+            type="text"
+            id="operandInput"
+            placeholder="Enter value or address"
+        >
+
+        <button type="button" id="findButton">Find Operand</button>
+
+        <h2>Operand Result</h2>
+        <div id="result">Your result will appear here.</div>
+
+        <h2>Explanation Steps</h2>
+        <div id="steps">Select a mode to begin.</div>
+
+    </div>
+
+    <!-- JAVASCRIPT LINK: Keep this before closing body tag -->
+    <script src="script.js"></script>
+
+</body>
+</html>
